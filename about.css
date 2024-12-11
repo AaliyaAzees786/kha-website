@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 10px;
+  padding: 0;
+  background-image: url(bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  background-color: #f4f4f4;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav ul li a.active {
+  color: #ff0000;
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1{
+  margin-top: 10px;
+}
+
+.about-us, .mission-vision {
+  margin-bottom: 20px;
+}
+
+.about-us .box, .mission-vision .box {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  text-align: justify; /* Added for better text alignment */
+}
+
+ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+footer {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+footer .contact {
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Adjust the layout for smaller screens */
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 16px; /* Slightly smaller font for mobile */
+  }
+
+  main {
+    padding: 15px;
+    max-width: 95%; /* Ensure it fits well on smaller screens */
+  }
+
+  .about-us .box, .mission-vision .box {
+    padding: 15px;
+    border-radius: 6px; /* Slightly reduced radius for compactness */
+    max-width: 95%;
+    margin: 0 auto; /* Center align boxes on mobile */
+  }
+
+  .about-us, .mission-vision {
+    margin-bottom: 15px; /* Reduced spacing for better layout on small screens */
+  }
+
+  footer {
+    font-size: 12px; /* Adjust font size for footer on mobile */
+    padding: 10px;
+  }
+}

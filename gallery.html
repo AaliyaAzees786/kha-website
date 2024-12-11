@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KHA - Gallery</title>
+  <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Menu -->
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="Logo" style="height: 60px;">
+    </div>
+    <div class="logo-text">Khaaz.org</div>
+      <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+      <div class="nav-links">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="about.html" class="nav-item">About Us</a>
+        <a href="events,html" class="nav-item">Events</a>
+        <a href="community.html" class="nav-item">Community</a>
+        <a href="gallery.html" class="nav-item active">Gallery</a>
+        <a href="team.html" class="nav-item">Committee</a>
+      </div>
+    </div>
+    
+  </header>
+
+  <!-- Gallery Section -->
+  <main>
+    <section class="gallery-section">
+      <h1>GALLERY</h1>
+      <div class="gallery-grid">
+      <div id="gallery" class="gallery gallery-item">
+        <!-- Images will be dynamically added here -->
+      </div>
+      </div>
+      <div class="lightbox">
+        <button class="close-lightbox">&times;</button>
+        <button class="nav-button prev-button">&lt;</button>
+        <div class="lightbox-content">
+            <img src="" alt="Enlarged gallery image">
+        </div>
+        <button class="nav-button next-button">&gt;</button>
+    </div>
+    </section>
+
+    
+
+      <!-- Video Gallery -->
+      <section class="video-gallery">
+        <h2 style="text-align: center;">VIDEO GALLERY</h2>
+
+        <!-- Cultural Events -->
+        <div class="video-section">
+          <h3>KHA Traditional and Cultural Events</h3>
+          <div class="video-grid">
+            <iframe src="https://www.youtube.com/embed/watch?v=VKiX7ZEnME8&list=UUSRPSVlEJ9GIfJPJmTi_6wg&index=137" title="Cultural Video 1"></iframe>
+            <iframe src="https://www.youtube.com/embed/watch?v=jO0ra2vEX2o&list=UUSRPSVlEJ9GIfJPJmTi_6wg&index=135" title="Cultural Video 2"></iframe>
+            <iframe src="https://www.youtube.com/embed/01KyOP8pOVI" title="Cultural Video 3"></iframe>
+            <iframe src="https://www.youtube.com/embed/BEdWb5iCbis" title="Cultural Video 4"></iframe>
+            <iframe src="https://www.youtube.com/embed/watch?v=cEvA0F_dxV0&list=UUSRPSVlEJ9GIfJPJmTi_6wg&index=117" title="Cultural Video 5"></iframe>
+            <iframe src="https://www.youtube.com/embed/watch?v=uKMLIC2ntkY&list=UUSRPSVlEJ9GIfJPJmTi_6wg&index=119" title="Cultural Video 6"></iframe>
+            <iframe src="https://www.youtube.com/embed/jvIZM4Tw14A?list=UUSRPSVlEJ9GIfJPJmTi_6wg" title="Cultural Video 7"></iframe>
+            <iframe src="https://www.youtube.com/embed/watch?v=bbShQhpfo5w&list=UUSRPSVlEJ9GIfJPJmTi_6wg&t=1s" title="Cultural Video 6"></iframe>
+
+          </div>
+        </div>
+
+        <!-- Religious Events -->
+        <div class="video-section">
+          <h3>KHA Religious Events</h3>
+          <div class="video-grid">
+           <iframe width="350" height="300" src="https://www.youtube.com/embed/O4Yk0uAj1Qo" title="Ayyappa Puja 2012 Part 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           <iframe width="350" height="300" src="https://www.youtube.com/embed/LWb98mMdR34" title="AYYAPPA PUJA 2011 SWAMIYE SARANAM AYYAPPA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- YouTube Link -->
+      <div class="youtube-link">
+        <a href="https://www.youtube.com/@manunairaz/featured" target="_blank">WATCH MORE ON YOUTUBE</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <section id="contact-us" class="contact-us">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <div class="contact-details">
+        <div class="contact-item">
+          <span class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                <path d="M6.62 10.79a15.912 15.912 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.11-.21 11.72 11.72 0 003.66.73 1 1 0 011 1V20.9a1 1 0 01-.91 1A18 18 0 013 5.91a1 1 0 011-.91H7.5a1 1 0 011 1c.02 1.27.26 2.54.73 3.66.15.34.06.74-.21 1.11l-2.2 2.2z" />
+              </svg>
+              
+          </span>
+          <p>Jiju A - <a href="tel:6026288979">602-628-8979</a></p>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                <path d="M6.62 10.79a15.912 15.912 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.11-.21 11.72 11.72 0 003.66.73 1 1 0 011 1V20.9a1 1 0 01-.91 1A18 18 0 013 5.91a1 1 0 011-.91H7.5a1 1 0 011 1c.02 1.27.26 2.54.73 3.66.15.34.06.74-.21 1.11l-2.2 2.2z" />
+            </svg>                  
+          </span>
+          <p>Rajesh B - <a href="tel:602317308">602-317-308</a></p>
+        </div>
+      </div>
+      <div class="contact-email">
+        <div class="contact-item">
+          <span class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                <path d="M20 4H4c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h16c1.11 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z" />
+            </svg>                  
+          </span>
+          <p><a href="mailto:azhindus@gmail.com">azhindus@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+</section>
+<div class="footer">
+  <p>Copyright 2011-2024-Khaaz.org</p>
+</div>
+<script src="gallery.js"></script>
+</body>
+</html>

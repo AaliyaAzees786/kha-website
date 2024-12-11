@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KHA - Events</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+              <img src="logo.png" alt="Logo" style="height: 60px;">
+          </div>
+          <div class="logo-text">Khaaz.org</div>
+            <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+            <div class="nav-links">
+              <a href="index.html" class="nav-item">Home</a>
+              <a href="about.html" class="nav-item">About Us</a>
+              <a href="events.html" class="nav-item active">Events</a>
+              <a href="community.html" class="nav-item">Community</a>
+              <a href="gallery.html" class="nav-item">Gallery</a>
+              <a href="team.html" class="nav-item">Committee</a>
+            </div>
+          </div>
+          
+      </header>
+    <div class="container">
+        <section class="events-section">
+            <h2 class="section-header">UPCOMING EVENTS</h2>
+            <div class="events-grid" id="events upcomingEvents">
+                <!-- Event cards will be dynamically added here -->
+            </div>
+        </section>
+
+        <section class="events-section">
+            <h2 class="section-header">PAST EVENTS</h2>
+            <div class="events-grid" id="events">
+                <!-- Past event cards will be dynamically added here -->
+            </div>
+        </section>
+    </div>
+    <div id="poster-modal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modal-image" alt="Enlarged Event Poster">
+  </div>
+  
+    
+    <section id="contact-us" class="contact-us">
+        <div class="contact-container">
+          <h2>Contact Us</h2>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M6.62 10.79a15.912 15.912 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.11-.21 11.72 11.72 0 003.66.73 1 1 0 011 1V20.9a1 1 0 01-.91 1A18 18 0 013 5.91a1 1 0 011-.91H7.5a1 1 0 011 1c.02 1.27.26 2.54.73 3.66.15.34.06.74-.21 1.11l-2.2 2.2z" />
+                  </svg>
+                  
+              </span>
+              <p>Jiju A - <a href="tel:6026288979">602-628-8979</a></p>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M6.62 10.79a15.912 15.912 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.11-.21 11.72 11.72 0 003.66.73 1 1 0 011 1V20.9a1 1 0 01-.91 1A18 18 0 013 5.91a1 1 0 011-.91H7.5a1 1 0 011 1c.02 1.27.26 2.54.73 3.66.15.34.06.74-.21 1.11l-2.2 2.2z" />
+                </svg>                  
+              </span>
+              <p>Rajesh B - <a href="tel:602317308">602-317-308</a></p>
+            </div>
+          </div>
+          <div class="contact-email">
+            <div class="contact-item">
+              <span class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M20 4H4c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h16c1.11 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z" />
+                </svg>                  
+              </span>
+              <p><a href="mailto:azhindus@gmail.com">azhindus@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <div class="footer">
+      <p>Copyright 2011-2024-Khaaz.org</p>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <script src="events.js"></script>
+</body>
+</html>
